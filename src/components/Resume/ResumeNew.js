@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://drive.google.com/file/d/1NqJu5JMxBBxB75HRa18Yxu2TPS66Jb_I/view?usp=sharing";
+  "https://raw.githubusercontent.com/soumyajit4419/portfolio/master/src/Assets/CV_Serafin_Dericks_EN.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
