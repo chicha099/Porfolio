@@ -26,9 +26,9 @@ function Projects() {
             <ProjectCard
               imgPath={chatify}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              link="https://github.com/soumyajit4419/Chatify"
+              title="Coding To Help"
+              description="A big project that is currently in progress in an 8 developers team. CTL's goal is to help small NGOs to grow up and gain visibility by letting them receive donations and spread their philosophy."
+              link="https://github.com/MDVeloper/ong-client"
             />
           </Col>
 
@@ -36,9 +36,9 @@ function Projects() {
             <ProjectCard
               imgPath={leaf}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              link="https://github.com/soumyajit4419/Plant_AI"
+              title="Heavy Weather"
+              description="The Heavy Weather app provide an international and local weather forecast for cities, as well as a real-time geolocalization."
+              link="https://heavy-weather.vercel.app/"
             />
           </Col>
 
@@ -46,9 +46,9 @@ function Projects() {
             <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              link="https://github.com/soumyajit4419/Editor.io"
+              title="Tasty Meals Done Dirty Cheap"
+              description="A SPA that uses the Spoonacular API to provide information about +5000 recipes and allows to search, learn and also post new recipes."
+              link="https://github.com/chicha099/Tasty-Meals-Done-Dirty-Cheap"
             />
           </Col>
 
@@ -56,9 +56,9 @@ function Projects() {
             <ProjectCard
               imgPath={bitsOfCode}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              link="https://github.com/soumyajit4419/Bits-0f-C0de"
+              title="Gotta Map 'em All"
+              description="Basically a Pokedex that also where you can create a new Pokemons"
+              link="https://github.com/chicha099/Gotta-Map--em-All"
             />
           </Col>
 
