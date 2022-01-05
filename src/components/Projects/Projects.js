@@ -4,11 +4,11 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.jpeg";
-import editor from "../../Assets/Projects/codeEditor.png";
+import clima from "../../Assets/Projects/clima.png";
+import food from "../../Assets/Projects/food.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import poke from "../../Assets/Projects/poke.png";
 
 function Projects() {
   return (
@@ -34,7 +34,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={clima}
               isBlog={false}
               title="Heavy Weather"
               description="The Heavy Weather app provide an international and local weather forecast for cities, as well as a real-time geolocalization."
@@ -44,7 +44,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={food}
               isBlog={false}
               title="Tasty Meals Done Dirty Cheap"
               description="A SPA that uses the Spoonacular API to provide information about +5000 recipes and allows to search, learn and also post new recipes."
@@ -54,7 +54,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={poke}
               isBlog={false}
               title="Gotta Map 'em All"
               description="Basically a Pokedex that also where you can create a new Pokemons"
