@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi Everyone, I am <span className="purple">Serafin Dericks </span>
-            from <span className="purple"> Vienna, Austria </span>
+            from <span className="purple"> Hamburg, Germany </span>
             and i'm currently living in <span className="purple"> Buenos Aires, Argentina.</span>
             <br />I am a junior Fullstack Developer with Frontend preferences.
             <br />
