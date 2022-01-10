@@ -27,7 +27,7 @@ function Projects() {
               imgPath={leaf}
               isBlog={false}
               title="Coding To Help"
-              description="A big project that is currently in progress in an 8 developers team. CTL's goal is to help small NGOs to grow up and gain visibility by letting them receive donations and spread their philosophy."
+              description="A big project done in an 8 developers team. CTL's goal is to help small NGOs to grow up and gain visibility by letting them receive donations and spread their philosophy."
               link="https://github.com/MDVeloper/ong-client"
             />
           </Col>
@@ -57,7 +57,7 @@ function Projects() {
               imgPath={poke}
               isBlog={false}
               title="Gotta Map 'em All"
-              description="Basically a Pokedex that also where you can create a new Pokemons"
+              description="Basically a Pokedex that also let you can create a new Pokemons"
               link="https://github.com/chicha099/Gotta-Map--em-All"
             />
           </Col>
