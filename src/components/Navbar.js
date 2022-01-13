@@ -120,10 +120,10 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
-            <div>
+            {/* <div>
               <button name="EN" onClick={(e) => handleOnClickLen(e)}>EN</button>
               <button name="ES" onClick={(e) => handleOnClickLen(e)}>ES</button>
-            </div>
+            </div> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
