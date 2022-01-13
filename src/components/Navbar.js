@@ -2,11 +2,13 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
+import s from './navbar.module.css'
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
+import { useDispatch } from "react-redux";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -15,10 +17,12 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import { changeLen } from "../Store/action";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const dispatch = useDispatch();
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -29,6 +33,10 @@ function NavBar() {
   }
 
   window.addEventListener("scroll", scrollHandler);
+
+  function handleOnClickLen(e) {
+    dispatch(changeLen(e.target.name))
+  }
 
   return (
     <Navbar
@@ -112,6 +120,10 @@ function NavBar() {
                 <AiFillStar style={{ fontSize: "1.1em" }} />
               </Button>
             </Nav.Item>
+            <div>
+              <button name="EN" onClick={(e) => handleOnClickLen(e)}>EN</button>
+              <button name="ES" onClick={(e) => handleOnClickLen(e)}>ES</button>
+            </div>
           </Nav>
         </Navbar.Collapse>
       </Container>
