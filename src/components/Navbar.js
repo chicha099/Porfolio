@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
@@ -8,7 +8,7 @@ import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -22,7 +22,9 @@ import { changeLen } from "../Store/action";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const len = useSelector(state => state.len);
   const dispatch = useDispatch();
+
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -39,68 +41,69 @@ function NavBar() {
   }
 
   return (
-    <Navbar
-      expanded={expand}
-      fixed="top"
-      expand="md"
-      className={navColour ? "sticky" : "navbar"}
-    >
-      <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} className="img-fluid logo" alt="brand" />
-        </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="responsive-navbar-nav"
-          onClick={() => {
-            updateExpanded(expand ? false : "expanded");
-          }}
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ml-auto" defaultActiveKey="#home">
-            <Nav.Item>
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-              </Nav.Link>
-            </Nav.Item>
+    len === "ES" ?
+      <Navbar
+        expanded={expand}
+        fixed="top"
+        expand="md"
+        className={navColour ? "sticky" : "navbar"}
+      >
+        <Container>
+          <Navbar.Brand href="/">
+            <img src={logo} className="img-fluid logo" alt="brand" />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => {
+              updateExpanded(expand ? false : "expanded");
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto" defaultActiveKey="#home">
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Pagina Principal
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About
-              </Nav.Link>
-            </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineUser style={{ marginBottom: "2px" }} /> Sobre Mi
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
-              </Nav.Link>
-            </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/project"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginBottom: "2px" }}
+                  />{" "}
+                  Proyectos
+                </Nav.Link>
+              </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
-              </Nav.Link>
-            </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/resume"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> Curriculum
+                </Nav.Link>
+              </Nav.Item>
 
-            {/* <Nav.Item>
+              {/* <Nav.Item>
               <Nav.Link
                 href="https://blogs.soumya-jit.tech/"
                 target="_blank"
@@ -110,24 +113,114 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item> */}
 
-            <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/chicha099"
+              <Nav.Item className="fork-btn">
+                <Button
+                  href="https://github.com/chicha099"
+                  target="_blank"
+                  className="fork-btn-inner"
+                >
+                  <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                  <AiFillStar style={{ fontSize: "1.1em" }} />
+                </Button>
+              </Nav.Item>
+              <div className={s.buttons}>
+                <button name="EN" onClick={(e) => handleOnClickLen(e)} className={s.unselectedEN}>EN</button>
+                <button name="ES" onClick={(e) => handleOnClickLen(e)} className={s.selectedES}>ES</button>
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      :
+      <Navbar
+        expanded={expand}
+        fixed="top"
+        expand="md"
+        className={navColour ? "sticky" : "navbar"}
+      >
+        <Container>
+          <Navbar.Brand href="/">
+            <img src={logo} className="img-fluid logo" alt="brand" />
+          </Navbar.Brand>
+          <Navbar.Toggle
+            aria-controls="responsive-navbar-nav"
+            onClick={() => {
+              updateExpanded(expand ? false : "expanded");
+            }}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </Navbar.Toggle>
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="ml-auto" defaultActiveKey="#home">
+              <Nav.Item>
+                <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
+                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/about"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/project"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginBottom: "2px" }}
+                  />{" "}
+                  Projects
+                </Nav.Link>
+              </Nav.Item>
+
+              <Nav.Item>
+                <Nav.Link
+                  as={Link}
+                  to="/resume"
+                  onClick={() => updateExpanded(false)}
+                >
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+                </Nav.Link>
+              </Nav.Item>
+
+              {/* <Nav.Item>
+              <Nav.Link
+                href="https://blogs.soumya-jit.tech/"
                 target="_blank"
-                className="fork-btn-inner"
+                rel="noreferrer"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item>
-            {/* <div>
-              <button name="EN" onClick={(e) => handleOnClickLen(e)}>EN</button>
-              <button name="ES" onClick={(e) => handleOnClickLen(e)}>ES</button>
-            </div> */}
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
+              </Nav.Link>
+            </Nav.Item> */}
+
+              <Nav.Item className="fork-btn">
+                <Button
+                  href="https://github.com/chicha099"
+                  target="_blank"
+                  className="fork-btn-inner"
+                >
+                  <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
+                  <AiFillStar style={{ fontSize: "1.1em" }} />
+                </Button>
+              </Nav.Item>
+              <div className={s.buttons}>
+                <button name="EN" onClick={(e) => handleOnClickLen(e)} className={s.selectedEN}>EN</button>
+                <button name="ES" onClick={(e) => handleOnClickLen(e)} className={s.unselectedES}>ES</button>
+              </div>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
   );
 }
 

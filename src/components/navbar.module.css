@@ -1,53 +1,76 @@
-/* The switch - the box around the slider */
-.switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
+.selectedEN {
+  background-color: rgb(138, 59, 211);
+  color: #faf9fa;
+  border: 1px solid #8c4ab4;
+  border-radius: 5px 0 0 5px;
+}
+
+.selectedEN:focus {
+  outline: none;
+}
+
+.unselectedES {
+  background-color: #462b60;
+  color: #faf9fa;
+  border: 1px solid #8c4ab4;
+  border-radius: 0 5px 5px 0;
+  transition-duration: 500ms;
+}
+
+
+.selectedES {
+  background-color: rgb(138, 59, 211);
+  color: #faf9fa;
+  border: 1px solid #8c4ab4;
+  border-radius: 0 5px 5px 0;
+}
+
+.selectedES:focus {
+  outline: none;
+}
+
+.unselectedEN {
+  background-color: #462b60;
+  color: #faf9fa;
+  border: 1px solid #8c4ab4;
+  border-radius: 5px 0 0 5px;
+  transition-duration: 500ms;
+}
+
+.unselectedES:hover {
+  transition-duration: 500ms;
+  animation: neon .08s ease-in-out infinite alternate;
+}
+
+.unselectedEN:hover {
+  transition-duration: 500ms;
+  animation: neon .01s ease-in-out infinite alternate;
+}
+
+.buttons {
+  margin-left: 2%;
+  margin-top: 2.5%;
+  display: flex;
+  height: 15%;
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
   }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
   }
-  
-  /* The slider */
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #2196F3;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
+}

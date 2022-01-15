@@ -9,5 +9,6 @@ export default function rootReducer(state = initialState, action) {
                 ...state,
                 len: action.payload
             }
+            default: return state
     }
 }

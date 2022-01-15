@@ -6,6 +6,7 @@ import Resumecontent from "./ResumeContent";
 import axios from "axios";
 import pdf from "../../Assets/Soumyajit-Behera.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
+import { useSelector } from "react-redux";
 
 function Resume() {
   const uri = "https://porfolio-backend.vercel.app/ranks/getRanks";
@@ -35,7 +36,7 @@ function Resume() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button variant="primary" href={pdf} target="_blank">
             <AiOutlineDownload />
-            &nbsp;Download CV
+            &nbsp;Descargar CV
           </Button>
         </Row>
         <Row className="resume">
@@ -96,6 +97,7 @@ function Resume() {
         </Row>
       </Container>
     </Container>
+
   );
 }
 
