@@ -9,6 +9,7 @@ import food from "../../Assets/Projects/food.png";
 import slay from "../../Assets/Projects/slay.png";
 import chichat from "../../Assets/Projects/chichat.png";
 import poke from "../../Assets/Projects/poke.png";
+import film from "../../Assets/Projects/film.png";
 
 function Projects() {
   const len = useSelector((state) => state.len);
@@ -80,6 +81,16 @@ function Projects() {
               title="RogueLike insipirado en Slay The Spire (En progreso)"
               description="React no está pensado para hacer videojuegos pero quise tomar el desafío de intentarlo. Aun está en progreso pero ya puedes luchar contra enemigos nuevos en cada sala, aplicar cambios de estado y algunas funcionalidades mas."
               link="https://github.com/chicha099/card-game"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={film}
+              isBlog={false}
+              title="Big Film Or Box Flop"
+              description="Permite ver los últimos y mas relevantes estrenos de películas de cine además de ver la información detallada y los trailers de cada una."
+              link="https://github.com/chicha099/big-film-or-box-flop"
             />
           </Col>
           {/* <Col md={4} className="project-card">
@@ -173,6 +184,16 @@ function Projects() {
               title="Slay The Spire based RogueLike (Work In Progress)"
               description="React is not intended to make video games but I wanted to take the challenge to try it. It's still in progress but you can already fight new enemies in each room, apply state changes and some more features."
               link="https://github.com/chicha099/card-game"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={film}
+              isBlog={false}
+              title="Big Film Or Box Flop"
+              description="Allows you to see the latest and most relevant movie releases as well as detailed information and trailers for each film."
+              link="https://github.com/chicha099/big-film-or-box-flop"
             />
           </Col>
           {/* <Col md={4} className="project-card">
