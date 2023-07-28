@@ -47,7 +47,7 @@ function Footer() {
             </li> */}
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/serafín-dericks/"
+                  href="https://www.linkedin.com/in/serafin-dericks/"
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"
@@ -102,7 +102,7 @@ function Footer() {
             </li> */}
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/serafín-dericks/"
+                  href="https://www.linkedin.com/in/serafin-dericks/"
                   style={{ color: "white" }}
                   target="_blank"
                   rel="noopener noreferrer"

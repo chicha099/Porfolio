@@ -10,6 +10,10 @@ import slay from "../../Assets/Projects/slay.png";
 import chichat from "../../Assets/Projects/chichat.png";
 import poke from "../../Assets/Projects/poke.png";
 import film from "../../Assets/Projects/film.png";
+import mobydish from "../../Assets/Projects/mobydish.png";
+import mobydishMarketplace from "../../Assets/Projects/mobydishMarketplace.png";
+import mobydishBlog from "../../Assets/Projects/mobydishBlog.png";
+import trackin from "../../Assets/Projects/trackin.png";
 
 function Projects() {
   const len = useSelector((state) => state.len);
@@ -25,6 +29,42 @@ function Projects() {
           Aqui hay algunos de los proyectos en los que trabaje recientemente.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={trackin}
+              isBlog={false}
+              title="Trackin"
+              description="En Trackin, tuve un papel fundamental en el desarrollo de su software de seguimiento en tiempo real, permitiendo a los usuarios rastrear pedidos y monitorear entregas en tiempo real. Nuestras funciones intuitivas brindan un seguimiento preciso y mejoran la transparencia durante todo el proceso de entrega, lo que resulta en una mayor eficiencia operativa y una mejor experiencia para los clientes."
+              link="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobydishMarketplace}
+              isBlog={false}
+              title="Mobydish Marketplace"
+              description="Desarrollé un papel crucial en la creación del mercado/e-commerce de Mobydish para pedidos de eventos. Nuestro sistema fácil de usar agiliza el proceso de pedido, asegurando la satisfacción del cliente. Se ha convertido en un centro vital para gestionar los pedidos de eventos de manera eficiente."
+              link="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobydishBlog}
+              isBlog={false}
+              title="Mobydish Blog"
+              description="Utilicé SEO y creación de contenido para el blog de Mobydish, impulsando el compromiso de los clientes y el SEO. Los artículos informativos cautivaron a los lectores, generando interés en nuestros productos. El blog es ahora una poderosa herramienta para informar a los clientes, agregar valor y aumentar nuestra presencia en el mercado."
+              link="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobydish}
+              isBlog={false}
+              title="Mobydish Website"
+              description="Mi primera experiencia en una empresa fuera de mi país fue con Mobydish, donde fui responsable del diseño y desarrollo de su sitio web. Se convirtió en la plataforma principal para atraer nuevos clientes y comunicar de manera efectiva la esencia de nuestro producto a clientes potenciales."
+              link="#"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}
@@ -127,6 +167,42 @@ function Projects() {
           Here are a few projects I've worked on recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={trackin}
+              isBlog={false}
+              title="Trackin"
+              description="At Trackin, I played a key role in developing their real-time tracking software, empowering users to track orders and monitor deliveries in real time. Our intuitive features provide accurate tracking and enhance transparency throughout the entire delivery process, resulting in improved operational efficiency and a better customer experience."
+              link="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobydishMarketplace}
+              isBlog={false}
+              title="Mobydish Marketplace"
+              description="I played a vital role in developing Mobydish's marketplace/e-commerce platform for event orders. Our user-friendly system streamlines the ordering process, ensuring customer satisfaction. It's become a vital hub for managing event orders efficiently."
+              link="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobydishBlog}
+              isBlog={false}
+              title="Mobydish Blog"
+              description="I leveraged SEO and content creation for Mobydish's blog, driving client engagement and SEO. Informative articles captivated readers, sparking interest in our products. The blog is now a powerful tool to inform clients, add value, and boost our market presence."
+              link="#"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={mobydish}
+              isBlog={false}
+              title="Mobydish Website"
+              description="My first experience in a foreign company was with Mobydish, where I took the lead in designing and developing their website. It became the primary platform for attracting new clients and effectively communicating the essence of our product to potential customers."
+              link="#"
+            />
+          </Col>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={leaf}

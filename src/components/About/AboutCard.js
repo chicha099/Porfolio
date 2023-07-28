@@ -15,12 +15,15 @@ function AboutCard() {
               Hola a todos, Soy <span className="purple">Serafin Dericks </span>
               de <span className="purple"> Hamburgo, Alemania </span>
               y actualmente estoy viviendo en <span className="purple"> Buenos Aires, Argentina.</span>
-              <br />Soy un desarrollador especializado en Front-end aunque tambien tengo experiencia trabajando como Full-Stack.
+              <br />Soy un desarrollador Full-Stack especializado en Front-end aunque tambien tengo experiencia trabajando como Back-end.
               <br />
               <br />
               Ademas de codear, hay otras actividades que disfruto hacer!
             </p>
             <ul>
+              <li className="about-activity">
+                <ImPointRight /> Leer
+              </li>
               <li className="about-activity">
                 <ImPointRight /> Jugar Videojuegos
               </li>
@@ -53,12 +56,15 @@ function AboutCard() {
               Hi Everyone, I am <span className="purple">Serafin Dericks </span>
               from <span className="purple"> Hamburg, Germany </span>
               and i'm currently living in <span className="purple"> Buenos Aires, Argentina.</span>
-              <br />I am a Front-end developer although I also have experience working as Full-Stack Dev.
+              <br />I am a Full-Stack developer specialized in Front-end, although I also have strong experience working as Back-end.
               <br />
               <br />
               Apart from coding, some other activities that I love to do!
             </p>
             <ul>
+              <li className="about-activity">
+                <ImPointRight /> Reading
+              </li>
               <li className="about-activity">
                 <ImPointRight /> Playing Games
               </li>

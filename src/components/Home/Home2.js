@@ -23,13 +23,12 @@ function Home2() {
                 ME <span className="purple"> PRESENTO </span> BREVEMENTE
               </h1>
               <p className="home-about-body">
-                Soy un desarrollador al que le gusta emprender nuevos proyectos que desafíen su capacidad analítica y tecnológica.
+                Como desarrollador Full-Stack experimentado, me entusiasma enfrentar proyectos diversos y desafiantes que ponen a prueba mis capacidades analíticas y tecnológicas. Siento una pasión por expandir continuamente mis habilidades y ofrecer soluciones innovadoras a problemas complejos. Con un historial comprobado de abordar con éxito diversos proyectos, siempre estoy ansioso por asumir nuevos desafíos y aportar mi amplia experiencia para lograr resultados excepcionales.
                 <br />
-                <br />Programo con
-                <i>
+                <br />Como desarrollador experimentado, tengo fluidez en <i>
                   <b className="purple"> Javascript </b>
-                </i>
-                de manera de fluida.
+                </i> y he adquirido una valiosa experiencia en TypeScript y PHP. Mi experiencia abarca el desarrollo de front-end, back-end y aplicaciones full-stack, lo que me permite ofrecer soluciones de alta calidad para una amplia gama de proyectos. Continuamente aprendiendo y creciendo, me comprometo a mantenerme actualizado con las últimas tecnologías para sobresalir en mi campo como desarrollador.
+
                 <br />
                 <br />
                 Mi principal area de interes está en desarrollar nuevas&nbsp;
@@ -121,23 +120,15 @@ function Home2() {
                 LET ME <span className="purple"> INTRODUCE </span> MYSELF
               </h1>
               <p className="home-about-body">
-                An aspiring developer who loves to take on new projects that challenges his analytical and technological capacities
+                As an experienced Full-Stack developer, I thrive on embracing diverse and challenging projects that push the boundaries of my analytical and technological expertise. I am passionate about continuously expanding my skills and delivering innovative solutions to complex problems. With a proven track record of successfully tackling various projects, I am always eager to take on new challenges and contribute my wealth of experience to achieve exceptional results.
                 <br />
-                <br />I am fluent
-                <i>
+                <br />As a seasoned developer, I am fluent in <i>
                   <b className="purple"> Javascript </b>
-                </i>
-                developer.
+                </i> and have gained valuable experience in TypeScript and PHP. My expertise spans front-end, back-end, and full-stack development, allowing me to deliver high-quality solutions for a wide range of projects. Continuously learning and growing, I am committed to staying up-to-date with the latest technologies to excel in my craft.
+
                 <br />
                 <br />
-                My field of Interest's are building new &nbsp;
-                <i>
-                  <b className="purple">Web Applications and Products </b> and
-                  also contribute on {" "}
-                  <b className="purple">
-                    Open Source Projects.
-                  </b>
-                </i>
+                My primary interests lie in building new <i><b className="purple">Web Applications and Products</b></i> and contributing to <i><b className="purple">Open Source Projects</b></i>.
                 <br />
                 <br />
                 Whenever possible, I apply my passion for developing products

@@ -10,9 +10,17 @@ import {
   DiGit,
   DiHtml5,
   DiScrum,
-  DiCss3
+  DiCss3,
+  DiAngularSimple
 } from "react-icons/di";
-import { SiRedux } from "react-icons/si";
+import {
+  SiRedux,
+  SiPhp,
+  SiCodeigniter,
+  SiWordpress,
+  SiAmazonaws,
+  SiGooglecloud
+} from "react-icons/si";
 
 function Techstack() {
   return (
@@ -26,12 +34,32 @@ function Techstack() {
         <p className={s.techLabel}>NodeJs</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <DiNodejs />
+        <p className={s.techLabel}>NestJs</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <DiReact />
         <p className={s.techLabel}>React</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedux />
         <p className={s.techLabel}>Redux</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiAngularSimple />
+        <p className={s.techLabel}>Angular</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiWordpress />
+        <p className={s.techLabel}>Wordpress</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPhp />
+        <p className={s.techLabel}>PHP</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCodeigniter />
+        <p className={s.techLabel}>Codeigniter</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiHtml5 />
@@ -44,6 +72,14 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
         <p className={s.techLabel}>Git</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAmazonaws />
+        <p className={s.techLabel}>AWS</p>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud />
+        <p className={s.techLabel}>GCloud</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiPostgresql />
