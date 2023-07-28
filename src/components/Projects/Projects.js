@@ -20,7 +20,7 @@ function Projects() {
 
   return len === "ES" ? (
     <Container fluid className="project-section">
-      
+
       <Container>
         <h1 className="project-heading">
           En que he estado <strong className="purple">Trabajando </strong>
@@ -44,7 +44,7 @@ function Projects() {
               isBlog={false}
               title="Mobydish Marketplace"
               description="Desarrollé un papel crucial en la creación del mercado/e-commerce de Mobydish para pedidos de eventos. Nuestro sistema fácil de usar agiliza el proceso de pedido, asegurando la satisfacción del cliente. Se ha convertido en un centro vital para gestionar los pedidos de eventos de manera eficiente."
-              link="#"
+              link="https://www.mobydish.com/order/getAddress"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -53,7 +53,7 @@ function Projects() {
               isBlog={false}
               title="Mobydish Blog"
               description="Utilicé SEO y creación de contenido para el blog de Mobydish, impulsando el compromiso de los clientes y el SEO. Los artículos informativos cautivaron a los lectores, generando interés en nuestros productos. El blog es ahora una poderosa herramienta para informar a los clientes, agregar valor y aumentar nuestra presencia en el mercado."
-              link="#"
+              link="https://www.mobydish.com/blog/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -62,7 +62,7 @@ function Projects() {
               isBlog={false}
               title="Mobydish Website"
               description="Mi primera experiencia en una empresa fuera de mi país fue con Mobydish, donde fui responsable del diseño y desarrollo de su sitio web. Se convirtió en la plataforma principal para atraer nuevos clientes y comunicar de manera efectiva la esencia de nuestro producto a clientes potenciales."
-              link="#"
+              link="https://www.mobydish.com/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -158,7 +158,7 @@ function Projects() {
     </Container>
   ) : (
     <Container fluid className="project-section">
-      
+
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
@@ -182,7 +182,7 @@ function Projects() {
               isBlog={false}
               title="Mobydish Marketplace"
               description="I played a vital role in developing Mobydish's marketplace/e-commerce platform for event orders. Our user-friendly system streamlines the ordering process, ensuring customer satisfaction. It's become a vital hub for managing event orders efficiently."
-              link="#"
+              link="https://www.mobydish.com/order/getAddress"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -191,7 +191,7 @@ function Projects() {
               isBlog={false}
               title="Mobydish Blog"
               description="I leveraged SEO and content creation for Mobydish's blog, driving client engagement and SEO. Informative articles captivated readers, sparking interest in our products. The blog is now a powerful tool to inform clients, add value, and boost our market presence."
-              link="#"
+              link="https://www.mobydish.com/blog/"
             />
           </Col>
           <Col md={4} className="project-card">
@@ -200,7 +200,7 @@ function Projects() {
               isBlog={false}
               title="Mobydish Website"
               description="My first experience in a foreign company was with Mobydish, where I took the lead in designing and developing their website. It became the primary platform for attracting new clients and effectively communicating the essence of our product to potential customers."
-              link="#"
+              link="https://www.mobydish.com/"
             />
           </Col>
           <Col md={4} className="project-card">
