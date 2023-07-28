@@ -1,9 +1,11 @@
 import React from "react";
-import Particles from "react-particles-js";
+import Particles from "react-particles-webgl";
 
 function Particle() {
   return (
     <Particles
+      width="100vw"
+      height="100vh"
       params={{
         particles: {
           number: {
@@ -13,7 +15,7 @@ function Particle() {
               value_area: 1500,
             },
           },
-          line_linked: {
+          links: {
             enable: false,
             opacity: 0.03,
           },

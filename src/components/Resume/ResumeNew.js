@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
+
 import pdf from "../../Assets/CV_Serafin_Dericks_EN.pdf";
 import pdf2 from "../../Assets/CV_Serafin_Dericks_ES.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
@@ -29,7 +29,7 @@ function ResumeNew() {
     len === "ES" ?
       <div>
         <Container fluid className="resume-section">
-          <Particle />
+          
           <Row style={{ justifyContent: "center", position: "relative" }}>
             <Button variant="primary" href={pdf2} target="_blank">
               <AiOutlineDownload />
@@ -54,7 +54,7 @@ function ResumeNew() {
       :
       <div>
         <Container fluid className="resume-section">
-          <Particle />
+          
           <Row style={{ justifyContent: "center", position: "relative" }}>
             <Button variant="primary" href={pdf} target="_blank">
               <AiOutlineDownload />

@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
+
 import { useSelector } from "react-redux";
 import leaf from "../../Assets/Projects/leaf.png";
 import clima from "../../Assets/Projects/clima.png";
@@ -20,7 +20,7 @@ function Projects() {
 
   return len === "ES" ? (
     <Container fluid className="project-section">
-      <Particle />
+      
       <Container>
         <h1 className="project-heading">
           En que he estado <strong className="purple">Trabajando </strong>
@@ -158,7 +158,7 @@ function Projects() {
     </Container>
   ) : (
     <Container fluid className="project-section">
-      <Particle />
+      
       <Container>
         <h1 className="project-heading">
           My Recent <strong className="purple">Works </strong>
